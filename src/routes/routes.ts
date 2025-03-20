@@ -16,17 +16,14 @@ import {
 
 const router = Router();
 
-// Criminosos
 router.post("/criminoso", createCriminosoController);
 router.get("/criminoso", getAllCriminososController);
 router.get("/criminoso/:id", getCriminosoByIdController);
 
-// Crimes
 router.post("/crime", createCrimeController);
 router.get("/crime", getAllCrimesController);
 router.get("/crime/:id", getCrimeByIdController);
 
-// Armas
 router.post("/arma", createArmaController);
 router.get("/arma/crime/:crimeId", getArmasByCrimeController);
 
